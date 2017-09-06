@@ -1,0 +1,86 @@
+/********** Base styles **********/
+* {
+  box-sizing: border-box;
+
+}
+.row{width: 100%;}
+
+h1
+{
+  text-align: center;
+  font-size:1.75em;
+}
+
+.title{
+  float: right;
+  position: relative;
+  border: 2px solid black;
+  margin: 0;
+  padding-left: 10px;
+  padding-right: 10px;
+  font-size: 1.23em;
+}
+p
+{
+  clear: right;
+  text-align: center;
+}
+
+#section1 .content, #section2 .content ,#section3 .content
+{
+  border: 3px solid black;
+  margin: 5px;
+  background-color: gray;
+
+}
+#section1 .title
+{
+  background-color: #00FFFF;
+}
+#section2 .title
+{
+  background-color: red;
+}
+
+#section3 .title
+{
+  background-color: orange;
+}
+p{
+  font-family: Georgia, serif;
+  color: black;
+  padding: 12px;
+}
+
+/********** Large devices only **********/
+@media (min-width: 992px)
+{ #section1,#section2,#section3{
+  float: left;
+}
+
+   #section1,#section2,#section3
+   {
+    width: 33.33%;
+    }
+}
+
+/********** Medium devices only **********/
+@media (min-width: 768px) and (max-width: 991px) {
+#section1,#section2,#section3 {
+float: left;
+  }
+  #section1,#section2{
+    width: 50%;
+  }
+  #section3 {
+    width: 100%;
+  }
+}
+@media (max-width: 767px) {
+  #section1,#section2,#section3
+  { float: left;
+    }
+  #section1,#section2,#section3{
+    width: 100%;
+  }
+}
